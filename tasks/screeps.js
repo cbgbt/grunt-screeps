@@ -69,7 +69,7 @@ module.exports = function (grunt) {
                     try {
                       var parsed = JSON.parse(data);
                       if(parsed.ok) {
-                          var msg = 'Committed to Screeps account "' + options.username + '"';
+                          var msg = 'Committed to Screeps account "' + options.username + '@' + options.hostname + '"';
                           if(options.branch) {
                               msg += ' branch "' + options.branch+'"';
                           }
