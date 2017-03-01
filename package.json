@@ -1,20 +1,21 @@
 {
-  "name": "grunt-screeps",
-  "description": "A Grunt plugin for committing code to your Screeps account",
-  "version": "1.2.1",
-  "homepage": "https://github.com/screeps/grunt-screeps",
+  "name": "grunt-screeps-customserver",
+  "description": "A Grunt plugin for committing code to an arbitrary Screeps server",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cbgbt/grunt-screeps-customserver",
   "author": "Artem Chivchalov <chivchalov@gmail.com> (https://screeps.com)",
+  "contributors": ["Sean Kelly <sean.kelly.2992@gmail.com (https://github.com/cbgbt)"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/screeps/grunt-screeps.git"
+    "url": "https://github.com/cbgbt/grunt-screeps-customserver.git"
   },
   "bugs": {
-    "url": "https://github.com/screeps/grunt-screeps/issues"
+    "url": "https://github.com/cbgbt/grunt-screeps-customserver/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/screeps/grunt-screeps/blob/master/LICENSE-MIT"
+      "url": "https://github.com/cbgbt/grunt-screeps-customserver/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {

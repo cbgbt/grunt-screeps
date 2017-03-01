@@ -1,8 +1,9 @@
 /*
- * grunt-screeps
- * https://github.com/screeps/grunt-screeps
+ * grunt-screeps-customserver
+ * https://github.com/cbgbt/grunt-screeps-customserver
  *
  * Copyright (c) 2015 Artem Chivchalov
+ * Copyright (c) 2017 Sean Kelly
  * Licensed under the MIT license.
  */
 
