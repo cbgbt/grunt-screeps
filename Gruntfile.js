@@ -29,9 +29,12 @@ module.exports = function (grunt) {
         // Configuration to be run (and then tested).
         screeps: {
             options: {
-                email: 'EMAIL',
+                username: 'EMAIL',
                 password: 'PASSWORD',
-                branch: 'default'
+                hostname: 'HOSTNAME',
+                port: 443,
+                branch: 'default',
+                "use-https": false
             },
             test: {
                 src: ['test/fixtures/happy/*']

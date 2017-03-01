@@ -9,6 +9,7 @@
 'use strict';
 
 var path = require('path'),
+    http = require('http'),
     https = require('https'),
     util = require('util');
 
@@ -41,12 +42,13 @@ module.exports = function (grunt) {
                 modules[name] = grunt.file.read(filepath);
             });
 
-            var req = https.request({
-                hostname: 'screeps.com',
-                port: 443,
+            var reqMethod = options['use-https'] ? https.request : http.request;
+            var req = reqMethod({
+                hostname: options.hostname,
+                port: options.port,
                 path: options.ptr ? '/ptr/api/user/code' : '/api/user/code',
                 method: 'POST',
-                auth: options.email + ':' + options.password,
+                auth: options.username + ':' + options.password,
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
                 }
@@ -67,7 +69,7 @@ module.exports = function (grunt) {
                     try {
                       var parsed = JSON.parse(data);
                       if(parsed.ok) {
-                          var msg = 'Committed to Screeps account "' + options.email + '"';
+                          var msg = 'Committed to Screeps account "' + options.username + '"';
                           if(options.branch) {
                               msg += ' branch "' + options.branch+'"';
                           }
